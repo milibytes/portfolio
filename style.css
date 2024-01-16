@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Helios Regular';
+    src: url('fonts/helios-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helios Bold';
+    src: url('fonts/helios-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helios Regular', sans-serif;
+    background-color: #141418;
+    color: #ffffff;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0px;
+    width: 95%;
+    height: 70px;
+    background-color: #141418;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Adjust the size of the logo as needed */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+/* NAVBAR */
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px; /* Adjust the margin between navbar items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* SOCIAL */
+
+#social {
+    display: flex;
+    align-items: center;
+}
+
+#social div {
+    margin-right: 10px; /* Adjust the margin between social icons */
+}
+
+#social img {
+    width: 30px; /* Adjust the size of the social icons as needed */
+}
+
+/* HOME */
+
+#home {
+    text-align: center; /* Center-align the content */
+    position: relative; /* Set the positioning context for absolute positioning */
+    margin-top: 150px; /* Add some top margin to push content down */
+    scroll-margin-top: 150px;
+}
+
+#home img {
+    display: block;
+    margin: 0 auto; /* Center the images horizontally */
+}
+
+/* Make the globe a little bigger and position it at the top center of the swirl */
+#home img[src="assets/globe.png"] {
+    width: 185px; /* Adjust the size as needed */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Make the star smaller */
+#home img[src="assets/star-oval.png"] {
+    width: 185px; /* Adjust the size as needed */
+    position: absolute;
+    top: 210px; /* Adjust the positioning as needed */
+    left: 30%; /* Adjust the positioning as needed */
+}
+
+h1 {
+    font-family: 'Helios Extended', sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Additional styling for the h2 element if needed */
+h2 {
+    font-family: 'Helios Bold', sans-serif;
+    font-size: 1.25em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

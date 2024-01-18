@@ -219,7 +219,7 @@ body {
     width: 530px;
     margin-bottom: 20px;
     margin-left: 40px;
-    margin-top: 5px;
+    margin-top: -10px;
 }
 
 .about-header {
@@ -366,8 +366,8 @@ body {
 
 .design3 {
     position: absolute;
-    bottom: -485px;
-    left: 1140px;
+    bottom: -540px;
+    left: 1225px;
     width: 30%;
     height: auto;
     z-index: -1;

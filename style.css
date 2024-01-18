@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Helios Regular';
     src: url('fonts/Helios.ttf') format('truetype');
     font-weight: normal;
@@ -13,13 +20,6 @@
 }
 
 
-@font-face {
-    font-family: 'Inter';
-    src: url('fonts/Inter-font.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 @font-face {
     font-family: 'HeliosExt Bold';
@@ -29,9 +29,10 @@
 }
 
 body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'HeliosExt Bold', sans-serif;
     margin: 0;
     padding: 0;
-    /* font-family: 'Helios Regular', sans-serif; */
     background-color: #141418;
     color: #ffffff;
 }
@@ -44,8 +45,8 @@ body {
     position: fixed;
     top: 0px;
     width: 90%;
-    height: 70px;
-    background-color: #141418;
+    height: 95px;
+    /* background-color: #141418; */
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
@@ -195,30 +196,195 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
 /* ABOUT ME */
-
 #aboutme {
     height: 82vh;
-    /* background-color: #26262b; */
     color: white;
-    text-align: center;
-    padding-top: 70px; /* Adjust padding to make up for fixed header height */
+    padding-top: 150px;
 }
 
-#aboutme h1 {
-    margin-top: 0;
-    font-family:'HeliosExt-Bold', sans-serif;
-    font-size: 4.5em;
+
+#about-page-container {
+    display: flex;
+    /* margin-bottom: 79px; */
+    margin-left: 180px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 530px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.about-header {
+    font-family: 'HeliosExt-Bold', sans-serif;
+    font-size: 3.5em;
     font-weight: bold;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 5px;
+    line-height: 1;
+    text-align: left;
+}
+
+.pink-text {
+    color: #FF66C4
 }
 
 
-#aboutme p {
-    margin: 20px;
+.cursor-image {
+    width: 95px;
+    margin-top: -85px;
+    margin-left: 197px;
+}
+/* 
+.about-text {
+    margin-bottom: 0px;
+    line-height: 1.2;
+} */
+
+.about-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    line-height: 1.2;
+    word-spacing: 0.3em;
+    width: 415px;
+    margin-left: 35px;
+}
+
+
+.skillset-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -425px;
+    margin-left: 610px;
+    width: 370px;
+}
+
+/* Add styling for skillset-header and skillset content as needed */
+.skillset-header {
+    font-family: 'HeliosExt-Bold', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-left: -35px;
+    line-height: 1;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 45px;
+    padding: 20px;
+    width: 290px;
+}
+
+
+/* Add more styling for skillset content if needed */
+.languages,
+.tools {
+    margin-top: 10px;
+}
+
+/* Add more styling for skillset content if needed */
+.languages h5,
+.tools h5 {
+    font-family: 'Helios Regular', Helios, sans-serif;
+    font-size: 1em;
+    margin-right: 1px; /* Adjust the margin between h5 and h2 */
+    margin-top: 25px;
+}
+
+.languages .title-container,
+.tools .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: -3px;
+    margin-top: -15px;
+}
+
+.languages h2,
+.tools h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 10px;
+    width: 380px;
+    margin-top: 30px;
+    
+}
+
+.languages h3,
+.tools h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border: 0px solid pink;
+    border-radius: 15px; /* Adjust border-radius for rounded corners */
+    margin: 3px;
+    padding: 10px;
+    display: inline-block; /* Display h3 elements inline */
+}
+
+
+/* Gradient Colors */
+/* Linear Gradient (90 degrees) */
+.languages .python {
+    background: linear-gradient(90deg, #5170FF, #FF66C4);
+}
+
+.languages .javascript {
+    background: linear-gradient(90deg, #FF5757, #8C52FF);
+}
+
+.languages .html-css {
+    background: linear-gradient(90deg, #0097B2, #7ED957);
+}
+
+.tools .flask {
+    background: linear-gradient(90deg, #8C52FF, #5CE1E6);
+}
+
+.tools .nodejs {
+    background: linear-gradient(90deg, #8C52FF, #FF914D);
+}
+
+.tools .reactjs {
+    background: linear-gradient(90deg, #8C52FF, #5CE1E6);
+}
+
+.tools .expressjs {
+    background: linear-gradient(90deg, #5170FF, #FF66C4);
+}
+
+.tools .sqlalchemy {
+    background: linear-gradient(90deg, #8C52FF, #00BF63);
+}
+
+.design3 {
+    position: absolute;
+    bottom: -485px;
+    left: 1140px;
+    width: 30%;
+    height: auto;
+    z-index: -1;
+}
+
+
+.design4 {
+    position: absolute;
+    bottom: -920px;
+    left: -160px;
+    width: 30%;
+    height: auto;
+    z-index: -1;
+}
+
+#projects {
+    height: 82vh;
+    color: white;
+    padding-top: 150px;
 }

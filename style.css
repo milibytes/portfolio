@@ -414,20 +414,33 @@ body {
 }
 
 .project-container {
-    display: flex;
-    justify-content: space-between; /* Adjust to space-between for cards side by side */
-    flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
 }
 
 .project-card {
-    width: 100%;
-    max-width: 300px;
-    background-color: #141418;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 20px;
+  width: 100%;
+  max-width: 250px; /* Adjust the max-width to make the cards smaller */
+  background-color: #141418;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 20px; /* Adjust the padding if needed */
+  margin-bottom: 10px; /* Reduce the space between cards */
 }
+
+.project-skills h5 {
+  font-size: 0.9em;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 16px;
+  width: 76px;
+  height: 20px;
+  padding: 10%;
+  text-align: center;
+  margin-bottom: 5px; /* Add margin-bottom to provide space between project skills */
+}
+
 
 .project-title {
     font-family: 'Helios Regular', Helios,  sans-serif;
@@ -459,17 +472,6 @@ body {
 .project-skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.project-skills h5 {
-    font-size: 0.9em;
-    margin: 5px;
-    border: 1px solid white;
-    border-radius: 16px;
-    width: 76px;
-    height: 20px;
-    padding: 10%;
-    text-align: center;
 }
 
 
@@ -534,4 +536,192 @@ body {
     transform: translate3d(0, 0, 1em);
     border-radius: 15px; 
   }
+
+
+
+  #contact {
+    height: 82vh;
+    color: white;
+    padding-top: 90px;
+    /* background-color: #141418; */
+}    
   
+  .card {
+    width: 280px;
+    height: 280px;
+    background: white;
+    border-radius: 32px;
+    padding: 3px;
+    position: relative;
+    box-shadow: #604b4a30 0px 70px 30px -50px;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+  }
+  
+  .card .mail {
+    position: absolute;
+    right: 2rem;
+    top: 1.4rem;
+    background: transparent;
+    border: none;
+  }
+  
+  .card .mail svg {
+    stroke:  #FF66C4;
+    stroke-width: 3px;
+  }
+  
+  .card .mail svg:hover {
+    stroke: linear-gradient(90deg, #5170FF, #FF66C4)
+  }
+  
+  .card .profile-pic {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 29px;
+    z-index: 1;
+    border: 0px solid  #5170FF;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+  }
+  
+  .card .profile-pic img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card .profile-pic svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transform-origin: 45% 20%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card .bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background: linear-gradient(90deg, #5170FF, #FF66C4);
+    top: 80%;
+    border-radius: 29px;
+    z-index: 2;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  
+  .card .bottom .content {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 160px;
+  }
+  
+  .card .bottom .content .name {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .card .bottom .content .about-me {
+    display: block;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 1rem;
+  }
+  
+  .card .bottom .bottom-bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container svg {
+    height: 20px;
+    fill: white;
+    filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container svg:hover {
+    fill: #FF66C4;
+    transform: scale(1.2);
+  }
+  
+  .card .bottom .bottom-bottom .button {
+    background: white;
+    color:  #FF66C4;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+    box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+  }
+  
+  .card .bottom .bottom-bottom .button:hover {
+    background:  #FF66C4;
+    color: white;
+  }
+  
+  .card:hover {
+    border-top-left-radius: 55px;
+  }
+  
+  .card:hover .bottom {
+    top: 20%;
+    border-radius: 80px 29px 29px 29px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  }
+  
+  .card:hover .profile-pic {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid  #FF66C4;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+  }
+  
+  .card:hover .profile-pic:hover {
+    transform: scale(1.3);
+    border-radius: 0px;
+  }
+  
+  .card:hover .profile-pic img {
+    transform: scale(2.5);
+    -o-object-position: 0px 25px;
+    object-position: 0px 25px;
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  .card:hover .profile-pic svg {
+    transform: scale(2.5);
+    transition: all 0.5s ease-in-out 0.5s;
+  }

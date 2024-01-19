@@ -320,9 +320,9 @@ body {
     font-weight: bold;
     margin-left: 10px;
     width: 380px;
-    margin-top: 30px;
-    
+    margin-top: 30px;   
 }
+
 
 .languages h3,
 .tools h3 {
@@ -334,8 +334,13 @@ body {
     margin: 3px;
     padding: 10px;
     display: inline-block; /* Display h3 elements inline */
+    transition: box-shadow 0.3s ease;
 }
 
+.languages h3:hover,
+.tools h3:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
 
 /* Gradient Colors */
 /* Linear Gradient (90 degrees) */
@@ -431,7 +436,13 @@ body {
     color: white;
     display: block;
     margin-bottom: 10px;
-    font-weight: 700em
+    font-weight: 700em;
+    height: 55px;
+    
+}
+
+.project-title:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 .project-gif {
@@ -456,7 +467,71 @@ body {
     border: 1px solid white;
     border-radius: 16px;
     width: 76px;
-    height: 25px;
-    padding: 8%;
+    height: 20px;
+    padding: 10%;
     text-align: center;
 }
+
+
+.button-icon {
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+    border-radius: 15px; 
+  }
+  
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .button-icon:hover {
+    border-color: #FF66C4
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: #FF66C4;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+    border-radius: 15px; 
+  }
+  
+  .front {
+    /* background: #222229; */
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+    border-radius: 15px; 
+  }
+  

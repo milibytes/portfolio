@@ -1,3 +1,4 @@
+/*  FONTS */
 @font-face {
     font-family: 'Inter';
     src: url('fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
@@ -20,7 +21,6 @@
 }
 
 
-
 @font-face {
     font-family: 'HeliosExt Bold';
     src: url('fonts/HeliosExt Bold.otf') format('opentype');
@@ -28,13 +28,16 @@
     font-style: normal;
 }
 
+
+/* CONTENT */
 body {
-    font-family: 'Inter', sans-serif;
-    font-family: 'HeliosExt Bold', sans-serif;
+    font-family: 'Inter', sans-serif, 'HeliosExt Bold'; /* Specify multiple font families */
     margin: 0;
     padding: 0;
     background-color: #141418;
     color: #ffffff;
+    margin: 0 auto;
+    max-width: 1500px; /* Adjust the maximum width as needed */
 }
 
 /* HEADER */
@@ -51,6 +54,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* LOGO */
 
@@ -210,6 +214,7 @@ body {
     margin-left: 180px;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
 }
 
 .about-container {
@@ -217,6 +222,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 530px;
+    width: 100%;
     margin-bottom: 20px;
     margin-left: 40px;
     margin-top: -10px;
@@ -266,6 +272,7 @@ body {
     margin-top: -425px;
     margin-left: 610px;
     width: 370px;
+    width: 100%;
 }
 
 /* Add styling for skillset-header and skillset content as needed */
@@ -386,5 +393,70 @@ body {
 #projects {
     height: 82vh;
     color: white;
-    padding-top: 150px;
+    padding-top: 90px;
+    /* background-color: #141418; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between; /* Adjust to space-between for cards side by side */
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #141418;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-family: 'Helios Regular', Helios,  sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700em
+}
+
+.project-gif {
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.project-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-skills h5 {
+    font-size: 0.9em;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 16px;
+    width: 76px;
+    height: 25px;
+    padding: 8%;
+    text-align: center;
 }

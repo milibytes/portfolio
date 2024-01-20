@@ -1,0 +1,142 @@
+#projects {
+    height: 82vh;
+    color: white;
+    padding-top: 90px;
+    /* background-color: #141418; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 290px;
+  background-color: #141418;
+  border: 1px solid white;
+  border-radius: 48px;
+  padding: 25px;
+  margin: -25px;
+}
+
+
+.project-skills h5 {
+  font-size: 0.9em;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 16px;
+  width: 76px;
+  height: 20px;
+  padding: 10%;
+  text-align: center;
+  margin-bottom: 5px; /* Add margin-bottom to provide space between project skills */
+}
+
+
+.project-title {
+    font-family: 'Helios Regular', Helios,  sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700em;
+    height: 55px;
+    
+}
+
+.project-title:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.project-gif {
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.project-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.button-icon {
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+    border-radius: 15px; 
+  }
+  
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .button-icon:hover {
+    border-color: #FF66C4
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: #FF66C4;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+    border-radius: 15px; 
+  }
+  
+  .front {
+    /* background: #222229; */
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+    border-radius: 15px; 
+  }

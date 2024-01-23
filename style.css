@@ -403,6 +403,15 @@ body {
     z-index: -1;
 }
 
+.design5 {
+  position: absolute;
+  bottom: -889px;
+  left: 807px;
+  width: 20%;
+  height: auto;
+  z-index: -1;
+}
+
 #projects {
   height: 82vh;
   color: white;

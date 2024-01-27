@@ -236,12 +236,12 @@ body {
 }
 
 .about-header {
-    font-family: 'HeliosExt-Bold', sans-serif;
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    line-height: 1;
-    text-align: left;
+  font-family: 'HeliosExt-Bold', sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: -10px;
+  line-height: 1;
+  text-align: left;
 }
 
 .pink-text {
@@ -267,8 +267,8 @@ body {
   margin-bottom: 154px;
   line-height: 1.5;
   word-spacing: 0.4=3em;
-  width: 550px;
-  margin-left: 15px;
+  width: 558px;
+  margin-left: 25px;
 }
 
 .flatiron-link {
@@ -400,12 +400,12 @@ body {
 
 
 .design4 {
-    position: absolute;
-    bottom: -920px;
-    left: -160px;
-    width: 30%;
-    height: auto;
-    z-index: -1;
+  position: absolute;
+  bottom: -920px;
+  left: -180px;
+  width: 28%;
+  height: auto;
+  z-index: -1;
 }
 
 

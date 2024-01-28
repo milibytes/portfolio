@@ -332,7 +332,7 @@ body {
     font-size: 1.4em;
     font-weight: bold;
     margin-left: 10px;
-    width: 380px;
+    width: 406px;
     margin-top: 30px;   
 }
 
@@ -387,6 +387,17 @@ body {
 
 .tools .sqlalchemy {
     background: linear-gradient(90deg, #8C52FF, #00BF63);
+}
+
+.tools  .git {
+  background: linear-gradient(90deg, #0097B2, #7ED957);
+}
+
+.tools  .api {
+  background: linear-gradient(90deg, #8C52FF, #FF914D);
+}
+.tools  .postman {
+  background: linear-gradient(90deg, #FF5757, #8C52FF);
 }
 
 .design3 {

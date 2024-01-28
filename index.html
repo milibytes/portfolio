@@ -9,11 +9,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     <style>
         body {
-          background-image: url("background.jpg");
+            background-image: url("background.jpg");
         }
-        </style>
+    </style>
+    <!-- Add the script below -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pyramidLoader = document.querySelector('.pyramid-loader');
+
+            pyramidLoader.addEventListener('click', function () {
+                // Scroll to the top of the page
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </head>
 <body>
+
+    <div class="pyramid-loader">
+        <div class="wrapper">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
 
     <nav id="header">
         <div class="logo">

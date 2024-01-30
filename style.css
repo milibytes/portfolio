@@ -55,6 +55,11 @@ body {
   transform: rotateX(-20deg);
 }
 
+.pyramid-loader:hover {
+  cursor: pointer;
+}
+
+
 .wrapper {
   position: relative;
   width: 100%;

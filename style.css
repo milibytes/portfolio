@@ -178,7 +178,7 @@ html, body {
     transform-origin: calc(50% - 200px);
     animation: moveHorizontal 40s ease infinite;
 
-    opacity: 0.7;
+    opacity: 0.9;
   }
 
   .g5 {
@@ -199,7 +199,7 @@ html, body {
 
   .interactive {
     position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 80%) no-repeat;
     mix-blend-mode: var(--blending);
 
     width: 100%;
@@ -570,7 +570,80 @@ body {
 }
 
 
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
 
+a,
+a span {
+  color: white;
+  text-decoration: underline;
+}
+
+a::before,
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+/* Rest of your existing styles... */
+
+a::before {
+  background-color: pink;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6; /* Set the initial color to white */
+}
+
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+/* Presentational Styles */
+/* body {
+	display: grid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+	line-height: 1.5;
+  height: 100vh;
+	place-items: center;
+} */
+
+a {
+	text-decoration: none;
+	color: #18272F;
+	font-weight: 700;
+	vertical-align: top;
+}
 
 /* Add more styling for skillset content if needed */
 .languages,
@@ -670,8 +743,8 @@ body {
 
 .design3 {
   position: absolute;
-  bottom: 965px;
-  left: 1225px;
+  bottom: 880px;
+  left: 1215px;
   width: 30%;
   height: auto;
   z-index: -1;
@@ -702,7 +775,10 @@ body {
   justify-content: space-evenly;
 }
 
+.proj-content {
+  top: 10px;
 
+}
 .pro-card {
   position: relative;
   width: 295px;
@@ -794,68 +870,6 @@ body {
 
 
 
-
-.button-icon {
-  display: flex;
-  border: 3px #fff solid;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.icon {
-  background-color: #fff;
-  padding: 10px 10px 5px 10px;
-  border-radius: 15px; 
-}
-
-.icon svg {
-  width: 25px;
-  height: 25px;
-}
-
-.cube {
-  transition: all 0.4s;
-  transform-style: preserve-3d;
-  width: 200px;
-  height: 20px;
-}
-
-.button-icon:hover {
-  border-color: #FF66C4
-}
-
-.button-icon:hover .cube {
-  transform: rotateX(90deg);
-}
-
-.side {
-  position: absolute;
-  height: 47px;
-  width: 200px;
-  display: flex;
-  font-size: 0.8em;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-}
-
-.top {
-  background: #FF66C4;
-  color: #fff;
-  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
-  border-radius: 15px; 
-}
-
-.front {
-  /* background: #222229; */
-  color: #fff;
-  transform: translate3d(0, 0, 1em);
-  border-radius: 15px; 
-}
 
 
 

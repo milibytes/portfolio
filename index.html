@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             background-image: url("background\.jpg");
         }
     </style>
-
+    <!-- Add the script below -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const pyramidLoader = document.querySelector('.pyramid-loader');
@@ -23,9 +26,40 @@
             });
         });
     </script>
-    
 </head>
 <body>
+    
+    <div class="text-container">
+        <section id="home">
+             <img src="assets/swirly-main.png" alt="main swirl"/>
+            <img src="assets/globe.png" alt="globe"/>
+            <img src="assets/star-oval.png" alt="star oval"/>
+            <div class="standalone-rectangle"></div>
+            <h1>SAJIYA MILI</h1>
+            <h2>software engineer</h2>
+            <img src="assets/design1.png" alt="design 1">
+            <div class="line-between-designs"></div>
+            <img src="assets/design2.png" alt="design 2">
+        </section>
+      </div>
+      <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
 
     <div class="pyramid-loader">
         <div class="wrapper">
@@ -70,17 +104,6 @@
         </div>
     </nav>
 
-    <section id="home">
-        <img src="assets/swirly-main.png" alt="main swirl"/>
-        <img src="assets/globe.png" alt="globe"/>
-        <img src="assets/star-oval.png" alt="star oval"/>
-        <div class="standalone-rectangle"></div>
-        <h1>SAJIYA MILI</h1>
-        <h2>software engineer</h2>
-        <img src="assets/design1.png" alt="design 1">
-        <div class="line-between-designs"></div>
-        <img src="assets/design2.png" alt="design 2">
-    </section>
     
     <img class="design3" src='assets/swirly-diamond.png' alt="swirl diamond">
 
@@ -191,7 +214,7 @@
                             </div>
                             <div class="cube">
                                 <span class="side front">hover me</span>
-                                <span class="side top">check it on github</span>
+                                <span class="side top">check it  github</span>
                             </div>
                         </div>
                     </a>
@@ -278,45 +301,37 @@
     </section>
 
 
-    <section id="contact">
+    <!-- <section id="contact">
 
-        <div class="contact-container">
+            <div class="contact-container">
+ -->
 
+                <!-- profile pic container -->
+                <!-- maybe spotify song -->
+                <!--  spotify song-->
+                <!-- link to a blog -->
 
-            <!-- profile pic container -->
-            <!-- maybe spotify song -->
-            <!--  spotify song-->
-            <!-- link to a blog -->
-            <div class="post-card">
-                <div class="avatar"></div>
-                <a href="https://hashnode.com/edit/cloqk8e5z000209l3btc66w4t" class="title">My First Full-Stack Application: Creating a Weather Outfit Generator</a>
-                <span class="datetime">4 min to read</span>
-                <div class="image-preview"></div>
-                <div 
-                <a href="https://hashnode.com/edit/cloqk8e5z000209l3btc66w4t"            class="card__icon"><svg color="rgb(224, 223, 220)" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g color="rgb(224, 223, 220)"><circle opacity="0.2" r="96" cy="128" cx="128"></circle><circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96" cy="128" cx="128"></circle><polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline><line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" y2="128" x2="168" y1="128" x1="88"></line></g></svg><a/>
+                
+                <!-- <div class="post-card">
+                    <div class="avatar"></div>
+                    <a href="https://hashnode.com/edit/cloqk8e5z000209l3btc66w4t" class="title">My First Full-Stack Application: Creating a Weather Outfit Generator</a>
+                    <span class="datetime">4 min to read</span>
+                    <div class="image-preview"></div>
+                    <div 
+                    <a href="https://hashnode.com/edit/cloqk8e5z000209l3btc66w4t"            class="card__icon"><svg color="rgb(224, 223, 220)" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0; cursor: auto;" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g color="rgb(224, 223, 220)"><circle opacity="0.2" r="96" cy="128" cx="128"></circle><circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96" cy="128" cx="128"></circle><polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline><line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" y2="128" x2="168" y1="128" x1="88"></line></g></svg><a/>
+                    </div>
                 </div>
-            </div>
+                    </div>
                 </div>
-              </div>
 
+            </div>    
 
-
-        </div>    
-
-
-
+        </section>  -->
 
 
 
 
-        </section> 
-
-
-
-
-
-
-
+    </body>
     <script src="script.js"></script>
-</body>
+    <script type="module" src="/src/main.ts"></script>
 </html>

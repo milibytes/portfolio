@@ -29,7 +29,24 @@
 </head>
 <body>
     
-    <div class="text-container">
+    <div class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
         <section id="home">
              <img src="assets/swirly-main.png" alt="main swirl"/>
             <img src="assets/globe.png" alt="globe"/>
@@ -41,25 +58,7 @@
             <div class="line-between-designs"></div>
             <img src="assets/design2.png" alt="design 2">
         </section>
-      </div>
-      <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-              <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <div class="gradients-container">
-          <div class="g1"></div>
-          <div class="g2"></div>
-          <div class="g3"></div>
-          <div class="g4"></div>
-          <div class="g5"></div>
-          <div class="interactive"></div>
-        </div>
+ 
 
     <div class="pyramid-loader">
         <div class="wrapper">
@@ -301,10 +300,10 @@
     </section>
 
 
-    <!-- <section id="contact">
+    <section id="contact">
 
             <div class="contact-container">
- -->
+
 
                 <!-- profile pic container -->
                 <!-- maybe spotify song -->
@@ -312,7 +311,7 @@
                 <!-- link to a blog -->
 
                 
-                <!-- <div class="post-card">
+                <div class="post-card">
                     <div class="avatar"></div>
                     <a href="https://hashnode.com/edit/cloqk8e5z000209l3btc66w4t" class="title">My First Full-Stack Application: Creating a Weather Outfit Generator</a>
                     <span class="datetime">4 min to read</span>
@@ -326,7 +325,7 @@
 
             </div>    
 
-        </section>  -->
+        </section> 
 
 
 

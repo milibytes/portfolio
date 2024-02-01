@@ -282,35 +282,37 @@
                 
                 <div class="extra-content">
                     
-                    <div class="audio-player">
+             
+                        <div class="audio-player">
+                            <!-- Album cover, song info, and progress bar elements -->
+                            <div class="album-cover">
+                                <img src="assets/currents-modified.png" alt="Album Cover">
+                            </div>
 
-  
-                        <div id="album-cover">
-                        <img src="assets/currents-modified.png" alt="Now Playing Circle"></div>
-                        
-                        
-                      <div class="player-controls">
-                        <div class="song-info">
-                          <div class="song-title">Yes I'm Changing</div>
-                          <p class="artist">Tame Impala</p>
+                            <div class="player-controls">
+                                <!-- Song info, progress bar, and buttons -->
+                                <div class="song-info">
+                                    <div class="song-title">Yes I'm Changing</div>
+                                    <p class="artist">Tame Impala</p>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress" id="progress"></div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="play-btn" onclick="togglePlayPause()">
+                                        <img src="assets/play.png" alt="Play" width="10" height="10">
+                                    </button>
+                                    <button class="pause-btn" onclick="togglePlayPause()">
+                                        <img src="assets/pause.png" alt="Pause" width="10" height="10">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="progress-bar">
-                          <div class="progress"></div>
-                        </div>
-                        <div class="buttons">
-                            <button class="play-btn">
-                                <img src="assets/play.png" alt="Play">
-                            </button>
-                            
-                            <button class="pause-btn">
-                                <img src="assets/pause.png" alt="Pause">
-                            </button>
-                            
-                            
-                        </div>
-                      </div>
-                    </div>
-                    
+
+                        <audio id="audioPlayer" src="assets/yesimchanging.mp3"></audio>
+
+                       
                     
 
 
@@ -358,4 +360,28 @@
     </body>
     <script src="script.js"></script>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playBtn = document.querySelector('.play-btn');
+        const pauseBtn = document.querySelector('.pause-btn');
+        const progressBar = document.querySelector('.progress');
+
+        function togglePlayPause() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playBtn.style.display = 'none';
+                pauseBtn.style.display = 'inline-block';
+            } else {
+                audioPlayer.pause();
+                playBtn.style.display = 'inline-block';
+                pauseBtn.style.display = 'none';
+            }
+        }
+        audioPlayer.addEventListener('timeupdate', updateProgressBar);
+
+        function updateProgressBar() {
+            const progressValue = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            progressBar.style.width = `${progressValue}%`;
+        }
+    </script>
 </html>

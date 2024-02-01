@@ -922,13 +922,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 300px;
   height: 90px;
   background-color: #141418;
   border-radius: 100px;
   padding: 18px;
   box-sizing: border-box;
 }
+
 
 .album-cover {
   width: 64px;
@@ -971,11 +972,11 @@ a {
 }
 
 .progress {
-  width: 50%;
+  width: 0;
   height: 100%;
   background-color: #1db954;
   transform-origin: left;
-  animation: progress-animation 10s linear infinite;
+  transition: width 0.2s ease-in-out;
 }
 
 
@@ -1021,16 +1022,8 @@ button {
   position: relative;
 }
 
-#album-cover {
-  width: 64px;
-  height: 64px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 50%;
-  margin: 10px; /* Adjust the margin as needed */
-}
 
-#album-cover img {
+.album-cover img {
   width: 100%;
   height: 100%;
   object-fit: cover;

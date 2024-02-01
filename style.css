@@ -915,6 +915,99 @@ a {
 }
 
 
+
+/*  */
+
+.spinning-container {
+  position: relative;
+}
+
+#spinning-circle {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+#spinning-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: rotate-circle 5s infinite linear; /* Adjust the duration as needed */
+  transform-origin: 50% 50%;
+}
+
+.text-rotation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.text-rotation p {
+  margin: 0;
+  font-size: 12px; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+  font-weight: bold;
+  display: inline-block;
+  shape-outside: ellipse(50% 50% at 50% 50%);
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes rotateText {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin: 50px auto;
+}
+
+.curved-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  animation: rotateText 5s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+.curved-text span {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 .main-song {
   background-color: black;
   padding: 1em;

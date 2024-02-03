@@ -911,7 +911,7 @@ a {
   align-items: center;
   padding: 10px 15px;
   gap: 15px;
-  background-color: #181717;
+  background-color: white;
   outline: 3px #181717 solid;
   outline-offset: -3px;
   border-radius: 50px;

@@ -905,6 +905,44 @@ a {
 }
 
 
+.git-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.git-button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.git-button svg path {
+  transition: 400ms;
+}
+
+.git-button:hover {
+  background-color: transparent;
+}
+
+.git-button:hover .text {
+  color: #181717;
+}
+
+.git-button:hover svg path {
+  fill: #181717;
+}
+
 
 
   #contact {

@@ -952,6 +952,36 @@ a {
     /* background-color: #141418; */
 }
 
+/* Add these styles to your existing CSS */
+
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+.audio-player,
+.post-card {
+  background-color: #141418;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.audio-player {
+  order: 1; /* Place audio player at the top */
+}
+
+.contact-container {
+  width: 40%; /* Adjust the width as needed */
+}
+
+
+
 
 
 

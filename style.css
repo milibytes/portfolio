@@ -909,7 +909,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 0px 15px;
   gap: 15px;
   background-color: white;
   outline: 3px #181717 solid;
@@ -932,7 +932,7 @@ a {
 }
 
 .git-button:hover {
-  background-color: transparent;
+  background-color: pink;
 }
 
 .git-button:hover .text {
